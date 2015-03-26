@@ -15,6 +15,12 @@ namespace Reservation_System
             lines = System.IO.File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + "data.txt");
         }
 
+        public CheckFile(string file)
+        {
+            lines = new String[1];
+            lines = System.IO.File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory + file);
+        }
+
         public string getSID()
         {
             return lines[5];
@@ -44,6 +50,11 @@ namespace Reservation_System
                 date = lines[2].Substring(10, 7);
             }
             return date;
+        }
+
+        public string checkAdmin()
+        {
+            return lines[0];
         }
     }
 }

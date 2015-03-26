@@ -154,13 +154,17 @@ namespace Reservation_System
             string temp = idInput.Text;
             if (Program.isAdmin)
             {
-                
-
-
-                enableTaskManager();
-                UnhookWindowsHookEx(intLLKey);
-                Taskbar.Show();
-                this.Close();
+                CheckFile file = new CheckFile("admin.txt");
+                if(file.checkAdmin().Equals(temp))
+                {
+                    enableTaskManager();
+                    UnhookWindowsHookEx(intLLKey);
+                    Taskbar.Show();
+                    this.Close();
+                }else
+                {
+                    Program.session = false;
+                }
             }
             else if (temp.Equals(""))
             {

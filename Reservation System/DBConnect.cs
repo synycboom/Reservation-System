@@ -203,17 +203,25 @@ namespace DatabaseConnection
 
         public void AdminSelect()
         {
-            string query = "SELECT * FROM admin_account ";
-            //Create Command
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-            //Create a data reader and Execute the command
-            MySqlDataReader dataReader = cmd.ExecuteReader();
+            string query = "SELECT * FROM admin_account ;";
+            if (this.OpenConnection() == true)
+            { 
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+           
+                MySqlDataReader dataReader = cmd.ExecuteReader();
+                string adminPass = "";
+                while (dataReader.Read()) {
+                    adminPass = dataReader.GetString(0);
+                }
+                    
+                dataReader.Close();
+                string[] lines = { adminPass };
+                System.IO.File.WriteAllLines(AppDomain.CurrentDomain.BaseDirectory + "admin.txt", lines);
+                this.CloseConnection();
+            }
+            
 
-            string adminPass = dataReader.GetString(0);
-            dataReader.Close();
-            string[] lines = { adminPass };
-            System.IO.File.WriteAllLines(AppDomain.CurrentDomain.BaseDirectory + "admin.txt", lines);
-            this.CloseConnection();
+            
 
         }
 
