@@ -152,9 +152,11 @@ namespace Reservation_System
         }
         private void login_Click(object sender, EventArgs e){
             string temp = idInput.Text;
-            if (temp.Equals("asdfghjkl"))
+            if (Program.isAdmin)
             {
                 
+
+
                 enableTaskManager();
                 UnhookWindowsHookEx(intLLKey);
                 Taskbar.Show();
@@ -209,6 +211,23 @@ namespace Reservation_System
             string startSecond = time.Substring(17, 2);
             string fullDateTime = year + "-" + month + "-" + day + " " + startHour + ":" + startMinute + ":" + startSecond + ".000000";
             return fullDateTime;
+        }
+
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+            if(Program.isAdmin)
+            {
+                label1.Text = "STUDENT ID";
+                Program.isAdmin = false;
+            } else
+            {
+                label1.Text = "ADMIN";
+                Program.isAdmin = true;
+                    
+            }
+            
         }
     }
 }

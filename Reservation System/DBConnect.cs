@@ -26,7 +26,7 @@ namespace DatabaseConnection
         //Initialize values
         private void Initialize()
         {
-            server = "127.0.0.1";
+            server = "192.168.1.22";
             database = "phpbooked";
             uid = "root";
             password = "sonitaloli";
@@ -199,6 +199,22 @@ namespace DatabaseConnection
             {
                 return check;
             }
+        }
+
+        public void AdminSelect()
+        {
+            string query = "SELECT * FROM admin_account ";
+            //Create Command
+            MySqlCommand cmd = new MySqlCommand(query, connection);
+            //Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            string adminPass = dataReader.GetString(0);
+            dataReader.Close();
+            string[] lines = { adminPass };
+            System.IO.File.WriteAllLines(AppDomain.CurrentDomain.BaseDirectory + "admin.txt", lines);
+            this.CloseConnection();
+
         }
 
     }

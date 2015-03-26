@@ -34,6 +34,7 @@ namespace Reservation_System
             this.idInput = new System.Windows.Forms.TextBox();
             this.login = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.account_swap = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +71,7 @@ namespace Reservation_System
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.account_swap);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.login);
             this.panel1.Controls.Add(this.idInput);
@@ -78,6 +80,17 @@ namespace Reservation_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(286, 83);
             this.panel1.TabIndex = 5;
+            // 
+            // account_swap
+            // 
+            this.account_swap.AutoSize = true;
+            this.account_swap.Location = new System.Drawing.Point(204, 57);
+            this.account_swap.Name = "account_swap";
+            this.account_swap.Size = new System.Drawing.Size(77, 13);
+            this.account_swap.TabIndex = 4;
+            this.account_swap.TabStop = true;
+            this.account_swap.Text = "Account Swap";
+            this.account_swap.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // MainForm
             // 
@@ -99,6 +112,7 @@ namespace Reservation_System
         private System.Windows.Forms.Button login;
         private System.Windows.Forms.Panel panel1;
         private DBConnect databaseConnect;
+        private System.Windows.Forms.LinkLabel account_swap;
     }
 }
 

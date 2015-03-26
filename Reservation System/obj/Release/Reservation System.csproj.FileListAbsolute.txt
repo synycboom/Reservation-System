@@ -37,3 +37,16 @@ C:\Users\PLU\Desktop\CN11-2-57\Project\Reservation_System_tem\Reservation System
 C:\Users\PLU\Desktop\CN11-2-57\Project\Reservation_System\Reservation System\bin\Release\Reservation System.exe.config
 C:\Users\PLU\Desktop\CN11-2-57\Project\Reservation_System\Reservation System\obj\Release\Reservation System.exe
 C:\Users\PLU\Desktop\CN11-2-57\Project\Reservation_System\Reservation System\obj\Release\Reservation System.pdb
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\bin\Release\Reservation System.exe.config
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation System.exe
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation System.pdb
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\bin\Release\Reservation System.exe
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\bin\Release\Reservation System.pdb
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\bin\Release\MySql.Data.dll
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation System.csprojResolveAssemblyReference.cache
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation_System.About.resources
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation_System.Clock.resources
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation_System.Logout.resources
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation_System.MainForm.resources
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation_System.Properties.Resources.resources
+C:\Users\samsung\Desktop\Reservation\Reservation_System\Reservation System\obj\Release\Reservation System.csproj.GenerateResource.Cache
